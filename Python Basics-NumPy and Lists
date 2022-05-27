@@ -3,11 +3,36 @@ import numpy as np  # Make numpy available using np.
 # Create a numpy array, and append an element
 a = np.array(["Hello", "World"])
 a = np.append(a, "Welcome to ML for Cyber")
+
 print("Current array: {}".format(a))
+
 print("Printing each element")
 for i in a:
-  print(i)
+print(i)
 
 print("\nPrinting each element and their index")
 for i,e in enumerate(a):
-  print("Index: {}, was: {}".format(i, e))
+print("Index: {}, was: {}".format(i, e))
+
+#Displaying the Maximum Element its index and Average Value
+
+print("\nShowing some basic math on arrays")
+b = np.array([0,1,4,3,2])
+print("Max: {}".format(np.max(b)))
+print("Average: {}".format(np.average(b)))
+print("Max index: {}".format(np.argmax(b)))
+
+#Displaying the type of anything you have
+print("\nYou can print the type of anything")
+print("Type of b: {}, type of b[0]: {}".format(type(b), type(b[0])))
+
+#Generating N by N Array with NumPy
+print("\nUse numpy to create a [2,5] dimension array with random number \n")
+c = np.random.rand(2, 5)
+print(c)
+
+print("\nYou can print the dimensions of arrays")
+print("Shape of a: {}".format(a.shape))
+print("Shape of b: {}".format(b.shape))
+print("Shape of c: {}".format(c.shape))
+print("...Observe, Python uses both [0,1,2] and (0,1,2) to specify lists")
