@@ -1,0 +1,31 @@
+#COLAB SPECIFICS: 
+
+#Colab is a virtual machine you can access directly. To run commands at the VM's terminal, prefix the line with an exclamation point (!).
+
+print("\nDoing $ls on filesystem")
+!ls -l
+!pwd
+
+print("Install numpy")  # Just for test, numpy is actually preinstalled in all Colab instances
+!pip install numpy
+
+#List the path of the current directory (pwd)
+#Go to / (cd) and list the content (ls -l)
+
+!pwd
+!cd /
+!ls -l
+print("Hello")
+
+#SOME FINAL WORDS ON COLAB
+#All usage of Colab in this course is completely free or charge. Even GPU usage is provided free of charge for some hours of usage every day.
+#Many of the exercises in the course executes more quickly by using GPU runtime: Runtime | Change runtime type | Hardware accelerator |GPU
+#You execute each cell in order, you can edit & re-execute cells if you want
+#Sometimes, this could have unintended consequences. For example, if you add a dimension to an array and execute the cell multiple times, then the cells after may not work. If you encounter problem reset your environment:
+#Runtime -> Restart runtime... Resets your Python shell
+#Runtime -> Restart all runtimes... Will reset the Colab image, and get you back to a 100% clean environment
+#You can also clear the output in the Colab by doing: Edit -> Clear all outputs
+#Save to your Google Drive if you want a copy with your code/output: File -> Save a copy in Drive...
+
+
+
